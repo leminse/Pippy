@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Dunggeunmiso', sans-serif;
+  background-color: #fff;
+}
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+}
+
+@font-face {
+  font-family: 'Dunggeunmiso';
+  src: url('./assets/fonts/Hakgyoansim\ Dunggeunmiso\ OTF\ B.otf') format('opentype');
+}
+
+.title {
+  font-weight: 700;
+  font-family: 'Dunggeunmiso', sans-serif;
+  font-size: 43px;
+  margin-bottom: 20px;
+  margin-left: 28px;
+}
+
+
+.btn {
+  width: 350px;
+  padding: 18px;
+  background-color: #A8E6CF;
+  border: none;
+  border-radius: 6px;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Dunggeunmiso', sans-serif;
+}
+
