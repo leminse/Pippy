@@ -1,40 +1,45 @@
 body {
-  margin: 0;
-  font-family: 'Dunggeunmiso', sans-serif;
-  background-color: #fff;
+  margin: 0; /* 브라우저 기본 여백 제거 */
+  font-family: 'Dunggeunmiso', sans-serif; /* 기본 폰트 지정 */
+  background-color: #fff; /* 배경색 흰색으로 설정 */
 }
 
-
 .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 300px;
+  display: flex; /* 플렉스 박스로 설정 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  align-items: center; /* 가로 축 중앙 정렬 */
+  justify-content: center; /* 세로 축 중앙 정렬 추가 (가운데 배치 위해) */
+  height: 100vh; /* 화면 전체 높이 사용 */
+  margin-top: 0; /* margin-top 제거하여 정확히 중앙 배치 */
 }
 
 @font-face {
-  font-family: 'Dunggeunmiso';
-  src: url('./assets/fonts/Hakgyoansim\ Dunggeunmiso\ OTF\ B.otf') format('opentype');
+  font-family: 'Dunggeunmiso'; /* 사용자 정의 폰트 선언 */
+  src: url('./assets/fonts/Hakgyoansim Dunggeunmiso OTF B.otf') format('opentype'); /* 폰트 파일 경로와 형식 */
 }
 
 .title {
-  font-weight: 700;
-  font-family: 'Dunggeunmiso', sans-serif;
-  font-size: 43px;
-  margin-bottom: 20px;
-  margin-left: 28px;
+  font-weight: 700; /* 굵은 글씨 */
+  font-family: 'Dunggeunmiso', sans-serif; /* 폰트 지정 */
+  font-size: 43px; /* 글씨 크기 */
+  margin-bottom: 20px; /* 아래쪽 여백 */
+  margin-left: 28px; /* 왼쪽 여백 */
 }
-
 
 .btn {
-  width: 350px;
-  padding: 18px;
-  background-color: #A8E6CF;
-  border: none;
-  border-radius: 6px;
-  font-size: 25px;
-  cursor: pointer;
-  margin-top: 20px;
-  font-family: 'Dunggeunmiso', sans-serif;
+  width: 90%; /* 너비를 부모 너비의 90%로 반응형 설정 */
+  max-width: 350px; /* 최대 너비 350px 제한 */
+  padding: 18px; /* 안쪽 여백 */
+  background-color: #a8e6cf; /* 기본 배경색 */
+  border: none; /* 테두리 제거 */
+  border-radius: 6px; /* 둥근 모서리 */
+  font-size: 25px; /* 글자 크기 */
+  cursor: pointer; /* 커서 모양 변경 */
+  margin-top: 20px; /* 위쪽 여백 */
+  font-family: 'Dunggeunmiso', sans-serif; /* 폰트 지정 */
+  transition: background-color 0.3s ease; /* 배경색 변화에 부드러운 전환 효과 */
 }
 
+.btn:hover {
+  background-color: #82c2b8; /* 호버 시 배경색 변경 */
+}

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DashboardPage.css';
-
 import purpleIcon from './assets/보라 팁피.png';
 import redCircle from './assets/빨강 캡슐.png';
 import yellowCircle from './assets/노랑 캡슐.png';
@@ -11,7 +10,6 @@ import settingsIcon from './assets/settings.png';
 
 const DashboardPage = () => {
   const navigate = useNavigate();
-
   const [typingCount, setTypingCount] = useState(1125);
   const [capsules, setCapsules] = useState(3);
   const [hatched, setHatched] = useState(0);
@@ -61,7 +59,10 @@ const DashboardPage = () => {
           <h2>오늘의 미션</h2>
           <div className="missions">
             {missions.map((mission, idx) => (
-              <div key={idx} className={`mission ${mission.completed ? 'completed' : ''}`}>
+              <div
+                key={idx}
+                className={`mission ${mission.completed ? 'completed' : ''}`}
+              >
                 <span className="mission-text">{mission.text}</span>
                 {mission.completed && <span className="checkmark">✓</span>}
               </div>
@@ -80,11 +81,25 @@ const DashboardPage = () => {
         <div className="grid-item progress">
           <h2>부화 진행도</h2>
           <div className="capsule-group">
-            <img src={redCircle} alt="빨강 캡슐" onClick={() => handleCircleClick('red')} className="circle-img" />
-            <img src={yellowCircle} alt="노랑 캡슐" onClick={() => handleCircleClick('yellow')} className="circle-img" />
-            <img src={blueCircle} alt="파랑 캡슐" onClick={() => handleCircleClick('blue')} className="circle-img" />
+            <img
+              src={redCircle}
+              alt="빨강 캡슐"
+              onClick={() => handleCircleClick('red')}
+              className="circle-img"
+            />
+            <img
+              src={yellowCircle}
+              alt="노랑 캡슐"
+              onClick={() => handleCircleClick('yellow')}
+              className="circle-img"
+            />
+            <img
+              src={blueCircle}
+              alt="파랑 캡슐"
+              onClick={() => handleCircleClick('blue')}
+              className="circle-img"
+            />
           </div>
-
           {visibleColor && (
             <div className="progress-text">
               <p>■ ■ ■ ■ □ □ □ 70%</p>

@@ -1,6 +1,6 @@
 .dashboard-container {
   font-family: 'Dunggeunmiso', sans-serif;
-  background-color: #FFFDF9;
+  background-color: #fffdf9;
   padding: 30px;
   min-height: 50vh;
   display: flex;
@@ -53,6 +53,7 @@
 .grid-item {
   background-color: #ffcfa4;
   padding: 18px 20px;
+  min-width: 300px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -80,8 +81,8 @@
 }
 
 .result-box {
-  background-color: #FFFDF9;
-  padding: 15px;
+  background-color: #fffdf9;
+  padding: 150px;
   border-radius: 10px;
 }
 
@@ -107,7 +108,7 @@
 }
 
 .mission {
-  background-color: #FFFDF9;
+  background-color: #fffdf9;
   padding: 10px;
   border-radius: 8px;
   display: flex;
@@ -116,7 +117,7 @@
 }
 
 .mission.completed {
-  background-color: #FFB6B9;
+  background-color: #ffb6b9;
   font-weight: 600;
 }
 
@@ -162,7 +163,7 @@
 }
 
 .action-btn.logout {
-  background-color: #FFB6B9;
+  background-color: #ffb6b9;
   color: rgb(0, 0, 0);
   font-weight: 700;
   width: 120px;
