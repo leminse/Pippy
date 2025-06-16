@@ -1,0 +1,89 @@
+/* EncyclopediaPage.css */
+
+body {
+  background-color: #fffdf9;
+  font-family: 'Arial', sans-serif;
+}
+
+.encyclopedia-container {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.encyclopedia-board {
+  width: 700px;
+  height: 500px;
+  background-color: #ffe2cd;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.tippee-item {
+  width: 150px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.purple {
+  background-color: #a474e7;
+}
+
+.green {
+  background-color: #66b771;
+}
+
+.encyclopedia-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-button {
+  background-color: #b2edd6;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button-wrapper {
+  position: relative;
+}
+
+.sort-dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #b2edd6;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.sort-dropdown button {
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sort-dropdown button:hover {
+  background-color: #a0dbc5;
+}

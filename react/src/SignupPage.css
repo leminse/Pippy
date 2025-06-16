@@ -41,7 +41,7 @@ body {
 .error-msg {
   width: 330px; /* 에러 메시지 너비 고정 */
   font-size: 15px; /* 글자 크기 */
-  color: #333; /* 글자 색 진한 회색 */
+  color: red; /* 글자 색 진한 회색 */
   margin: 0 0 10px 0; /* 아래쪽 여백 */
   text-align: left; /* 왼쪽 정렬 */
 }
