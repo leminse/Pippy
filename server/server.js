@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/signup', signupRouter);
-app.use('/api/login', loginRouter);  // 로그인 시 TypingTracker.setUser 호출
+app.use('/api/login', loginRouter);  
 app.use('/api/dashboard', dashboardRouter);
 app.use('/api/mission', missionRouter);
 
